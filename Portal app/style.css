@@ -1,15 +1,158 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0;padding:0;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+.underline{	padding-bottom:5px;	border-bottom: 1px solid #eee; margin:0 0 20px 0;}/* Add 5px bottom padding and a underline */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*end reset*/
+ body{
+	font-family: 'Open Sans', sans-serif;
+}
+  .wrap{
+	width:80%;
+	margin:0 auto;
+	 transition:all .2s linear;
+	-moz-transition:all .2s linear;/* firefox */
+	-webkit-transition:all .2s linear; /* safari and chrome */
+	-o-transition:all .2s linear; /* opera */
+	-ms-transition:all .2s linear;
+ }
+  .header{
+	background:url(../images/header-bg.jpg);
+ }
+  .logo{
+	float:left;
+ }
+  .menu{
+	 float:right;
+	 margin:40px 0;
+ }
+ .box{
+	position:absolute;
+	top:-700px;
+	width:100%;
+	color:blue#7F7F7F;
+	margin:auto;
+	padding:0px;
+	z-index:999999;
+	text-align:center;
+	left:0px;
+ }
+.box_content_center{
+	background:rgba(229, 127, 133, 0.93);
+ }
+a.boxclose{
+	cursor:pointer;
+	text-align:center;
+    display:block; 
+    position: absolute;
+	top:5em;
+	right:15em;     
+ }
+.menu_box_list{
+	display:inline-block;
+	padding:12.2em 0;
+}
+.menu_box_list li a{
+	display:block;
+	color:#FFF;
+	font-size:1.2em;
+	margin:5px 0px;
+	font-weight:600;
+	text-align:left;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.menu_box_list li a:hover{
+	color:#B63D44;
+}
+.menu_box_list li a > i > img{
+	vertical-align:middle;
+	padding-right:10px;
+}
+ .header_desc{
+ 	text-align:right;
+ }
+ .header_desc h1{
+ 	
+ 	font-size:5em;
+ 	color:#FFF;
+ 	
+ 	margin-bottom:10px; 	
+ }
+ .header_desc p{
+ 	font-size:1.7em;
+ 	color:#FFF;
+ 	
+ 	font-weight:200;
+ }
+ .header_desc p span{
+ 	font-weight:600;
+ }
 .button a{
  	display:inline-block;
  	font-size:0.95em;
  	color:#FFF;
  	text-transform:uppercase;
- 	border:2px solid #FFF;
+ 	border:2px solid #FFF; 	
  	padding:15px 30px;
+ 	margin-top: 10em;
+ 	margin-left: 3em;
+ 	margin-bottom: 0em;
+ 	float:right;
  	-webkit-transition: all 0.3s ease-out;
 	-moz-transition: all 0.3s ease-out;
 	-ms-transition: all 0.3s ease-out;
 	-o-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
+ }
+ .botao a{
+ 	display:inline-block;
+ 	font-size:0.95em;
+ 	color:#FFF;
+ 	text-transform:uppercase;
+ 	border:2px solid #FFF; 	
+ 	padding:15px 30px;
+ 	text-decoration: none;
+ 	
+ 	border:2px solid #14af8f;
+	color:#14af8f;
+ 	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+
+ }
+ .botao a:hover{
+ 	color:#5C5C5C;
+  border:2px solid #5C5C5C;
+ }
+ .botao a > i > img{
+ 	margin-bottom:-4px;
+ 	padding-left:5px;
+ }
+ .verde a{
+ 	border:2px solid #FFF;
+	color:#FFF;
  }
 .button a:hover{
   color:#5C5C5C;
@@ -18,4 +161,9 @@
  .button a > i > img{
  	margin-bottom:-4px;
  	padding-left:5px;
+}
+.iphone_img img{
+	display: block;
+	margin-top: -2em;
+	text-align: left;
 }
